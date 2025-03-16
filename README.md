@@ -18,7 +18,6 @@ A clean, simple and elegant Todo List web application to help you keep track of 
 - HTML5
 - CSS3 (with Grid and Flexbox)
 - Vanilla JavaScript
-- Google Fonts (Poppins)
 
 ## How to Use
 
@@ -39,15 +38,11 @@ A clean, simple and elegant Todo List web application to help you keep track of 
 ## Future Enhancements
 
 - Local storage to persist tasks
-- Task categories and priority levels
+- Task categories
 - Dark mode toggle
 - Mark tasks as complete
 - Filter and search functionality
 
 ## Credits
 
-Made with ❤️ by Hempushp Chauhan
-
-## License
-
-MIT
+Made by Hempushp Chauhan
