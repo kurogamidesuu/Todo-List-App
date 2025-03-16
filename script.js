@@ -1,4 +1,4 @@
-const todoList = [];
+const todoList = JSON.parse(localStorage.getItem('todolist')) || [];
 renderList()
 
 function addItem() {
@@ -18,8 +18,15 @@ function addItem() {
         item,
         date
     });
+    localStorage.setItem('todolist', JSON.stringify(todoList));
     itemInput.value = '';
     renderList();
+}
+
+function addOnEnter(event) {
+    if(event.key === 'Enter') {
+        addItem();
+    }
 }
 
 function renderList() {
@@ -48,6 +55,7 @@ function renderList() {
 
 function removeItem(index) {
     todoList.splice(index, 1);
+    localStorage.setItem('todolist', JSON.stringify(todoList));
     renderList();
 }
 
@@ -59,6 +67,7 @@ function swapUp(index) {
     const temp = todoList[index];
     todoList[index] = todoList[index - 1];
     todoList[index-1] = temp;
+    localStorage.setItem('todolist', JSON.stringify(todoList));
     renderList();
 }
 
@@ -70,5 +79,6 @@ function swapDown(index) {
     const temp = todoList[index];
     todoList[index] = todoList[index + 1];
     todoList[index+1] = temp;
+    localStorage.setItem('todolist', JSON.stringify(todoList));
     renderList();
 }

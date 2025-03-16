@@ -14,7 +14,7 @@
     </header>
     <div class="container">
         <div class="inputs">
-            <input type="text" placeholder="What do you need to do? ✨" class="js-input-item">
+            <input onkeydown="addOnEnter(event)" type="text" placeholder="What do you need to do? ✨" class="js-input-item">
             <input type="date" class="js-input-date">
             <button onclick="addItem()" class="add-btn">+ Add Task</button>
         </div>

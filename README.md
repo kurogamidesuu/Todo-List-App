@@ -37,7 +37,6 @@ A clean, simple and elegant Todo List web application to help you keep track of 
 
 ## Future Enhancements
 
-- Local storage to persist tasks
 - Task categories
 - Dark mode toggle
 - Mark tasks as complete
